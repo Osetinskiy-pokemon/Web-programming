@@ -1,0 +1,32 @@
+#title1 h1{
+    font-size: 48px;
+    color: rgb(5, 92, 102);
+    padding: 2px 0 10px 0;
+    font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 5px;   
+}
+#title1 h3{
+    font-size: 20px;
+    color: rgb(2, 87, 97);
+    padding: 2px 0 10px 0;
+    font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;   
+}
+
+body {
+    font-size: 15px;
+    color: rgb(29, 145, 158);
+    padding: 2px 0 10px 0;
+    font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px; 
+}
+
+html{
+    background-color: bisque;
+}

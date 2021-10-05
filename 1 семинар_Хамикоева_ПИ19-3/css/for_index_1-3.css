@@ -1,0 +1,80 @@
+.main_link {
+    color: mediumblue;
+    text-decoration: none; /*Будет ли подчеркивание у текста: none - не будет подчеркивания,
+     overline - сверху, underline - будет, line-through - перечеркнутый текст*/
+     
+}
+
+/*Псевдоклассы ставятся через :, а псевдоэлементы через ::*/
+/*hover - при наведении на объект будут применяться стили*/
+.main_link:hover {
+    color: mediumvioletred;
+    text-decoration: overline;
+    text-decoration-color:olive;
+    cursor: pointer; /*Курсорчик при наведении станет рукой*/
+    
+}
+
+/*Этот Псевдокласс будет срабатывать каждый раз, как будут нажимать на объект*/
+.main_link:active{
+    text-decoration:line-through;
+}
+
+/*Стили добавляются к тем ссылкам, по которым уже переходили*/
+.main_link:visited{
+    color: darkgoldenrod;
+}
+/*Псевдокласс focus срабатывает в тот момент, когда курсор находится на поле и готовы в нем писать*/
+/*input:disabled{} Обращение ко всем неактивным инпутам*/
+/*input:enabled{} обращение ко всем активным инпутам*/
+/*input:required{} обращение ко всем обязательным для заполнения инпутам*/
+input{color: red;}
+input:focus{color:green;}
+
+/*Выбираем только пустые*/
+p.text:empty{color: wheat;}
+/*ВЫбираем не пустые*/
+p.text:not(:empty){
+    color: salmon;
+    background: skyblue;
+}
+
+/*Обращение к невидимой части, находящейся после объекта, причем выделить ее будет нельзя*/
+#some_id::after{
+    content: '123';
+    color: yellow;
+    text-decoration: line-through;
+    background-color: teal;
+}
+
+p.text:not(:empty)::after{
+    content: "Ты не сможешь это выделить";
+    color:brown;
+    background:chartreuse;
+}
+p.text:empty::after{
+    content:attr(title);
+    color:cornflowerblue;}
+
+/*Все то же самое, что с after (после), можно производить и с before (перед)*/
+
+
+/*обращение к первому символу этого тега*/
+p.main_link::first-letter{
+    color: crimson;
+}
+
+/*обращение к первой строке тега*/
+p.main_link::first-line{
+    color: crimson;
+}
+
+/*Берем лишь тот тег p которые находится первым в документе*/
+p:first-of-type {
+    text-decoration: line-through;
+}
+
+/*Берем лишь тот тег p которые находится первым в документе*/
+p:last-of-type {
+    text-decoration: line-through;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+<div id="wrapper" class="wrapper">
+  <select name="" id="select">
+  </select>
+  <button onClick="onChangeColorHandler()">Выбрать цвет</button>
+<p>Хамикоева. 1. (а) SELECT, INPUT ( type=button) </p>
+<p>(б)В элементе SELECT выбрать цвет.</p>
+<p>(в)По кнопке изменить цвет фона документа</p>
+<p>Значения цветов в SELECT изначально заданы в массиве</p>
+</div>
+<style>
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background: red;
+}
+</style>
+<script>
+const options = [
+  {
+    name: 'Синий',
+    hex: 'blue',
+  },
+  {
+    name: 'Красный',
+    hex: 'red',
+  },
+  {
+    name: 'Белый',
+    hex: '#fff',
+  }
+];
+
+function renderOption(option) {
+  const optionElem = document.createElement('option');
+  optionElem.value = option.hex;
+  optionElem.innerHTML = option.name;
+  return optionElem;
+}
+
+function renderOptions(options) {
+  options.forEach((option) => {
+    document.getElementById('select').appendChild(renderOption(option));
+  });
+}
+
+function onChangeColorHandler() {
+  const selectedColorValue = document.getElementById('select').value;
+  wrapper.style.background = selectedColorValue;
+}
+
+renderOptions(options);
+</script>
+</html>

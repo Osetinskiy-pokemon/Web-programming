@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<script>
+function f1() {
+   x = $('#x').val()
+   alert("Число удваивается")
+   document.getElementById('x').value=x*2
+   
+}
+
+function f2() {
+   x = $('#x').val()
+   alert("Число возводится в квадрат")
+   document.getElementById('x').value=x*x
+   
+}
+
+</script>
+<script src="jquery.js"></script>
+
+<style>
+body { background-image : url(https://catherineasquithgallery.com/uploads/posts/2021-02/1613414458_45-p-bezhevii-fon-dlya-rabochego-stola-minimali-60.jpg); }
+</style>
+<p>Задача 1. Хамикоева.
+В окне 2 элемента: элемент для ввода текста и кнопка. 
+Вводится целое число. По нажатию кнопки число возводится в квадрат.</p>
+<br>x = <input id='x' type='number' value='10'>
+<br><input type='button' title='Удвоение числа' 
+   onclick="f1()"
+   value=*>
+<input type='button' title='Возведение числа в квадрат' 
+   onclick="f2()"
+   value=*>

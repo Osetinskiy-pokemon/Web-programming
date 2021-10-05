@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    function newContent() {
+      alert("загрузка нового контента");
+      document.open();
+      document.write("<h3>Страница щенков!</h3>");
+      document.write("<img src='https://i.gifer.com/2imV.gif'>")
+      console.log("new info");
+      document.close();
+}
+</script>
+</head>
+<body>
+
+<h2>Вы находитесь на странице котиков!</h2>
+<img src="https://i.gifer.com/embedded/download/735d.gif">
+<p id="demo">Для перехода на страницу щенков кликните по кнопке.</p>
+<button type="button" onclick="newContent()">Перейти</button>
+
+</body>
+</html> 

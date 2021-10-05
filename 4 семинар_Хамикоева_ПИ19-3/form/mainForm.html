@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--Форма для сайта-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <title>Main form</title>
+        <link rel="stylesheet" href="css/css_for_form.css">
+    </head>
+
+    <body>
+        <div id="title1" class="titleForm">
+            <h1>A form about your life</h1>
+            <h3>This form is designed to understand how comfortable you feel in life.</h3>
+        </div>
+        <div id="data" class="dataAboutUser">
+            <p>
+                <label for="username" class="uname" > Name </label>
+                <input id="username" name="username" type="text" placeholder="Ivanov Ivan Ivanovich"/>
+            </p>
+            <p>
+                <label for="email" class="yemail" > Email </label>
+                <input id="email" name="email" type="text" placeholder="ivanov@mail.ru"/>
+            </p>
+            <form action="">
+                <p>Please choose your sex:</p>
+                <input type="radio" id="male" name="sex"/>
+                <label for="male" id="male">male</label>
+                <br>
+                <input type="radio" id="female"name="sex"/>
+                <label for="female" id="female">female</label>
+            </form>
+            <p>
+                How old are you: = <input id='x' type='number' value='18'>
+            </p>
+            <form action="">
+                <p>What about the job?</p>
+                <input type="radio" id="studying" name="justStudyng"/>
+                <label for="studying" id="studying">I'm just studying</label>
+                <br>
+                <input type="radio" id="study_work"name="study_and_work"/>
+                <label for="study_work" id="study_work">I study and work</label>
+                <br>
+                <input type="radio" id="work"name="just_work"/>
+                <label for="study_work" id="study_work">I am working</label>
+                <br>
+                <input type="radio" id="other"name="other"/>
+                <label for="other" id="other">Other:</label>
+                <br>
+                <br><textarea name="other_job" cols="30" rows="6" placeholder="I chose the 'Other' button because..."></textarea>
+            </form>
+            <p>
+                Tell what you are currently interested in:
+                <br><textarea name="hobby" cols="30" rows="6" placeholder="My hobbies are..."></textarea>
+            </p>
+            <p>
+                Tell us how comfortable you feel in life right now. Do you like what you do? 
+                <br>Have you ever thought that you are destined for something different than what you are doing now?
+                <br><textarea name="hobby" cols="30" rows="6" placeholder="Enter the answer"></textarea>
+            </p>
+            <input type='button' title='Возведение числа в квадрат' value='Cool'>
+        </div>
+    </body>
+</html>
