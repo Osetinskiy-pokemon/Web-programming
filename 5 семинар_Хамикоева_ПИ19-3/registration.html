@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        body {
+            background: #9696ff url("https://phonoteka.org/uploads/posts/2021-04/1619056026_16-phonoteka_org-p-kosmicheskii-fon-dlya-profilya-16.jpg");
+            text-align: center;
+            background-color: cornflowerblue;
+            backdrop-filter: blur(3px);
+            
+        }
+    </style>
+</head>
+<body>
+<div class="registrationForm">
+    <form class="form-signup">
+        <h2 class="heading1">Registration form</h2>
+        <p>
+            <input id="login" name="login" required="required" class="form-control1" type="text" placeholder="Login" /><br>
+            <input id="firstName" name="firstName" required="required" class="form-control1" type="text" placeholder="First name"/><br>
+            <input id="lastName" name="lastName" required="required" class="form-control1" type="text" placeholder="Last name"/><br>
+            <input id="middleName" name="middleName" required="required" class="form-control1" type="text" placeholder="Middle name"/><br>
+            <input id="password" name="password" class="form-control1" required="required" type="password" placeholder="Password"/><br>
+            <button id="signUp" class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+        </p>
+        <p>By creating an account, you agree to our <a href="conditions.html">Terms and Confidentiality</a>.</p>
+        <p class="change_link" onclick="window.location.href='login.html';">
+            <label> Already registered? </label>
+            <a href="#login.html" class="to_subscribe"> Sign in </a>
+        </p>
+    </form>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/registration.js">
+</script>
+</html>

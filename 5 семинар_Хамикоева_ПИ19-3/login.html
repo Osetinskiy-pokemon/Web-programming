@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Авторизация</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style>
+        body {
+            background: #9696ff url("https://phonoteka.org/uploads/posts/2021-04/1619056026_16-phonoteka_org-p-kosmicheskii-fon-dlya-profilya-16.jpg");
+            text-align: center;
+            background-color: cornflowerblue;
+            backdrop-filter: blur(3px);
+
+        }
+    </style>
+</head>
+<body>
+<div class="login">
+    <form class="form_login">
+        <h2 class="heading">Log in to system ❤</h2>
+        <p>
+            <input type="text" id="login" name="login" class="form-control" placeholder="Enter your username" required >
+            <input type="password" id="password" name="password" class="form-control" placeholder="Enter the password" required>
+            <button id="signIn" class="btn btn-lg btn-primary btn-block" type="submit" >Sign in</button>
+        </p>
+        <label> Haven't created an account yet? </label>
+        </p>
+        <p class="change_link" onclick="window.location.href='registration.html';">
+            <a href="#registration.html" class="to_subscribe"> Sign up </a>
+            <br><a href="life.html">About life</a>
+        </p>
+    </form>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/login.js">
+</script>
+</html>
